@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    
+    <title>Currency calculator</title>
+</head>
+
+<body>
+    <nav class="d-flex align-end justify-between useless">
+        <img class="nav_image" src="./images.png" alt="logo">
+
+        <div class="nav-links">
+            <a class="nav_bank" href="# ">BANK</a>
+            <a href="# ">BUSINESS</a>
+            <a href="# ">INVESTMENT</a>
+            <a href="# ">INSURANCE</a>
+            <a href="# ">MOBILE</a>
+            <a href="# ">TRIPS</a>
+            <a href="# ">ENTERTAINMENT</a>
+        </div>
+
+        <div class="nav_button ">
+            <button class="login">LOG IN</button>
+        </div>
+    </nav>
+
+    <h1 class="currency">Currency converter online</h1>
+
+    <section class="currencies-section">
+        <section>
+            <p class="text">I have</p>
+
+            <div class="currencies">
+                <div class="currency-group">
+                    <input name="currency1" class="none" type="radio" value="RUB" id="rub1" checked>
+                    <label for="rub1">RUB</label>
+                </div>
+
+                <div class="currency-group">
+                    <input name="currency1" class="none" type="radio" value="USD" id="usd1">
+                    <label for="usd1">USD</label>
+                </div>
+
+                <div class="currency-group">
+                    <input name="currency1" class="none" type="radio" value="EUR" id="eur1">
+                    <label for="eur1">EUR</label>
+                </div>
+
+                <div class="currency-group">
+                    <input name="currency1" class="none" type="radio" value="GBP" id="gbp1">
+                    <label for="gbp1">GBP</label>
+                </div>
+            </div>
+
+            <div class="exchange-form">
+                <input class="left_value" value="1" type="text">
+                <p class="left_text">1 RUB = 0.0135 USD</p>
+            </div>
+        </section>
+
+        <section>
+            <p class="text">I want to buy</p>
+
+            <div class="currencies">
+                <div class="currency-group">
+                    <input name="currency2" class="none" type="radio" value="RUB" id="rub2">
+                    <label for="rub2">RUB</label>
+                </div>
+
+                <div class="currency-group">
+                    <input name="currency2" class="none" type="radio" value="USD" id="usd2" checked>
+                    <label for="usd2">USD</label>
+                </div>
+
+                <div class="currency-group">
+                    <input name="currency2" class="none" type="radio" value="EUR" id="eur2">
+                    <label for="eur2">EUR</label>
+                </div>
+
+                <div class="currency-group">
+                    <input name="currency2" class="none" type="radio" value="GBP" id="gbp2">
+                    <label for="gbp2">GBP</label>
+                </div>
+            </div>
+
+            <div class="exchange-form">
+                <input class="right_value" value="3 000" type="text">
+                <p class="right_text">1 RUB = 0.0135 USD</p>
+            </div>
+        </section>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

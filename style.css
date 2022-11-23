@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    visibility: visible;
+    text-decoration: none;
+    color: #959BA4;
+    line-height: 16px;
+    display: inline-block;
+    padding: 2px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #484f58;
+}
+
+.nav_bank {
+    color: black;
+}
+
+.nav-links {
+    width: 70%;
+}
+
+.nav_image {
+    width: 10%;
+}
+
+.login {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 60px;
+    height: 30px;
+    margin-left: 15px;
+    transition: ease 0.4s;
+    cursor: pointer;
+}
+
+.login:hover {
+    background-color: #833AE0;
+    color: white;
+}
+
+.currency {
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    line-height: 42px;
+    margin-top: 90px;
+    margin-bottom: -50px;
+    margin-left: 350px;
+}
+
+.currencies-section {
+    position: relative;
+    right: -75px;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 14px;
+    color: #9F9F9F;
+    margin-bottom: 15px;
+}
+
+.none {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.currencies {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+}
+
+.currency-group label {
+    color: #C6C6C6;
+    display: grid;
+    place-items: center;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #C6C6C6;
+    border-left: none;
+}
+
+.currency-group input:checked+label {
+    background-color: #833AE0;
+    border-color: #833AE0;
+    color: white;
+}
+
+.currency-group:first-child label {
+    border-left: 1px solid;
+    border-radius: 3px 0 0 3px;
+}
+
+.currency-group:last-child label {
+    border-radius: 0 3px 3px 0;
+}
+
+.currencies-section {
+    margin: 100px auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.currencies-section section {
+    width: 400px;
+}
+
+.exchange-form {
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+    border: 1px solid #C6C6C6;
+}
+
+.exchange-form input {
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
