@@ -10,6 +10,7 @@ const exchange = async(value, variables) => {
 
     let url = new URL(uri);
 
+    
     url.searchParams.append('base', variables[0]);
     url.searchParams.append('symbols', variables[1]);
 
@@ -53,6 +54,8 @@ async function getCurrency() {
     document.querySelector('.right_text').innerHTML = `1 ${currencies[1]} = ${(1 / result.currency).toFixed(4)} ${currencies[0]}`;
     document.querySelector('.left_text').innerHTML = `1 ${currencies[0]} = ${result.currency.toFixed(4)} ${currencies[1]}`;
 }
+
+
 
 inp.addEventListener('input', async(e) => {
     getCurrency();

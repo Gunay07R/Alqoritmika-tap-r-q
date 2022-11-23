@@ -21,16 +21,22 @@ nav a:hover {
     color: #484f58;
 }
 
-.nav_bank {
+.Bank {
     color: black;
+    
 }
 
-.nav-links {
+.navbar {
     width: 70%;
 }
 
-.nav_image {
+.sekil {
     width: 10%;
+    
+
+
+
+
 }
 
 .login {
